@@ -3,89 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KI verstehen – Künstliche Intelligenz einfach erklärt | Schulprojekt</title>
+<title>Farbversion 2 | KI verstehen – Künstliche Intelligenz einfach erklärt | Schulprojekt</title>
 <meta name="description" content="Ein interaktives Schulprojekt: Künstliche Intelligenz verstehen, entdecken und hinterfragen – Grundlagen, Geschichte, Chancen, Risiken und Zukunft.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Trirong:wght@400;500;600;700&family=Anaheim:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
 tailwind.config = {
   theme: {
     extend: {
-      colors: { ink: '#12294d', navy: '#1e3a8a', mist: '#f4f7ff', lav: '#f3f0ff' },
-      fontFamily: { display: ['Sora','sans-serif'], body: ['Inter','sans-serif'] },
-      boxShadow: { soft: '0 10px 40px -12px rgba(30,58,138,.14)', lift: '0 20px 50px -16px rgba(30,58,138,.25)' }
+      colors: {"ink": "#2D2933", "navy": "#6D688C", "mist": "#FFFCFE", "lav": "#F4F0F4", "white": "#FFFCFE", "sky": {"50": "#F5F7FE", "100": "#EBF0FE", "200": "#D5E0FE", "300": "#B9CDFE", "400": "#98B4FE", "500": "#98B4FE", "600": "#6D688C", "700": "#6D688C", "800": "#6D688C", "900": "#6D688C", "950": "#363246"}, "blue": {"50": "#F5F7FE", "100": "#EBF0FE", "200": "#D5E0FE", "300": "#B9CDFE", "400": "#98B4FE", "500": "#98B4FE", "600": "#6D688C", "700": "#6D688C", "800": "#6D688C", "900": "#6D688C", "950": "#363246"}, "cyan": {"50": "#F5F7FE", "100": "#EBF0FE", "200": "#D5E0FE", "300": "#B9CDFE", "400": "#98B4FE", "500": "#98B4FE", "600": "#6D688C", "700": "#6D688C", "800": "#6D688C", "900": "#6D688C", "950": "#363246"}, "violet": {"50": "#FAF4F7", "100": "#F1E6EB", "200": "#E1CED7", "300": "#C9AAB9", "400": "#AD879A", "500": "#8E677A", "600": "#8E677A", "700": "#8E677A", "800": "#6D688C", "900": "#6D688C", "950": "#363246"}, "purple": {"50": "#FAF4F7", "100": "#F1E6EB", "200": "#E1CED7", "300": "#C9AAB9", "400": "#AD879A", "500": "#8E677A", "600": "#8E677A", "700": "#8E677A", "800": "#6D688C", "900": "#6D688C", "950": "#363246"}, "indigo": {"50": "#FAF4F7", "100": "#F1E6EB", "200": "#E1CED7", "300": "#C9AAB9", "400": "#AD879A", "500": "#8E677A", "600": "#8E677A", "700": "#8E677A", "800": "#6D688C", "900": "#6D688C", "950": "#363246"}, "slate": {"50": "#FFFCFE", "100": "#F4F0F4", "200": "#E4DEE7", "300": "#CBC3D1", "400": "#81798D", "500": "#6D688C", "600": "#565066", "700": "#474152", "800": "#38333F", "900": "#2D2933", "950": "#211E26"}},
+      fontFamily: { display: ["Prompt","sans-serif"], subheading: ["Trirong","serif"], body: ["Anaheim","sans-serif"] },
+      boxShadow: { soft: '0 10px 40px -12px rgba(109,104,140,.14)', lift: '0 20px 50px -16px rgba(109,104,140,.25)' }
     }
   }
 }
 </script>
 <style>
   html{scroll-behavior:smooth;scroll-padding-top:96px}
-  body{font-family:'Inter',sans-serif;color:#12294d;background:#fff;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,h4{font-family:'Sora',sans-serif}
-  ::selection{background:#c7d2fe;color:#12294d}
+  body{font-family:'Anaheim',sans-serif;color:#2D2933;background:#fff;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:'Prompt',sans-serif}
+  ::selection{background:#E4DEE7;color:#2D2933}
   ::-webkit-scrollbar{width:10px;height:10px}
-  ::-webkit-scrollbar-track{background:#f1f5f9}
-  ::-webkit-scrollbar-thumb{background:#c7d2fe;border-radius:8px}
-  ::-webkit-scrollbar-thumb:hover{background:#a5b4fc}
+  ::-webkit-scrollbar-track{background:#F4F0F4}
+  ::-webkit-scrollbar-thumb{background:#E4DEE7;border-radius:8px}
+  ::-webkit-scrollbar-thumb:hover{background:#8E677A}
 
   .no-scrollbar::-webkit-scrollbar{display:none}
   .no-scrollbar{scrollbar-width:none}
 
-  .grad-text{background:linear-gradient(92deg,#1d4ed8 0%,#7c3aed 55%,#0891b2 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1d4ed8}
-  .eyebrow::before{content:'';width:26px;height:2px;border-radius:2px;background:linear-gradient(90deg,#38bdf8,#8b5cf6)}
+  .grad-text{background:linear-gradient(92deg,#8E677A 0%,#8E677A 55%,#8E677A 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8E677A}
+  .eyebrow::before{content:'';width:26px;height:2px;border-radius:2px;background:linear-gradient(90deg,#8E677A,#8E677A)}
 
-  .card{background:#fff;border:1px solid #e6ecf7;border-radius:1.25rem;box-shadow:0 10px 40px -14px rgba(30,58,138,.12)}
+  .card{background:#fff;border:1px solid #e3e3e3;border-radius:1.25rem;box-shadow:0 10px 40px -14px rgba(109,104,140,.12)}
   .card-hover{transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
-  .card-hover:hover{transform:translateY(-6px);box-shadow:0 24px 50px -18px rgba(30,58,138,.28)}
+  .card-hover:hover{transform:translateY(-6px);box-shadow:0 24px 50px -18px rgba(109,104,140,.28)}
 
-  .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(92deg,#2563eb,#7c3aed);color:#fff;font-weight:600;padding:.8rem 1.6rem;border-radius:999px;transition:transform .25s,box-shadow .25s;box-shadow:0 10px 26px -10px rgba(79,70,229,.5)}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(79,70,229,.55)}
-  .btn-ghost{display:inline-flex;align-items:center;gap:.5rem;border:1.5px solid #c7d2fe;color:#1e3a8a;font-weight:600;padding:.75rem 1.5rem;border-radius:999px;transition:all .25s;background:#fff}
-  .btn-ghost:hover{background:#eff6ff;border-color:#93c5fd}
+  .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(92deg,#8E677A,#8E677A);color:#fff;font-weight:600;padding:.8rem 1.6rem;border-radius:999px;transition:transform .25s,box-shadow .25s;box-shadow:0 10px 26px -10px rgba(142,103,122,.5)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(142,103,122,.55)}
+  .btn-ghost{display:inline-flex;align-items:center;gap:.5rem;border:1.5px solid #E4DEE7;color:#8E677A;font-weight:600;padding:.75rem 1.5rem;border-radius:999px;transition:all .25s;background:#fff}
+  .btn-ghost:hover{background:#FAF4F7;border-color:#E4DEE7}
 
-  .dots-bg{background-image:radial-gradient(circle,#c7d2fe 1.1px,transparent 1.1px);background-size:26px 26px}
-  .grid-bg{background-image:linear-gradient(#eef2ff 1px,transparent 1px),linear-gradient(90deg,#eef2ff 1px,transparent 1px);background-size:44px 44px}
+  .dots-bg{background-image:radial-gradient(circle,#E4DEE7 1.1px,transparent 1.1px);background-size:26px 26px}
+  .grid-bg{background-image:linear-gradient(#F4F0F4 1px,transparent 1px),linear-gradient(90deg,#F4F0F4 1px,transparent 1px);background-size:44px 44px}
 
   .float-anim{animation:floaty 6s ease-in-out infinite}
   .float-anim.d2{animation-delay:1.4s}
   .float-anim.d3{animation-delay:2.8s}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 
-  .nav-link{position:relative;font-weight:600;font-size:.83rem;color:#334155;padding:.4rem .2rem;white-space:nowrap;transition:color .2s}
-  .nav-link:hover{color:#1d4ed8}
-  .nav-link.active{color:#1d4ed8}
-  .nav-link.active::after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:linear-gradient(90deg,#38bdf8,#8b5cf6)}
+  .nav-link{position:relative;font-weight:600;font-size:.83rem;color:#3d3d3d;padding:.4rem .2rem;white-space:nowrap;transition:color .2s}
+  .nav-link:hover{color:#8E677A}
+  .nav-link.active{color:#8E677A}
+  .nav-link.active::after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:linear-gradient(90deg,#8E677A,#8E677A)}
 
   .tl-details{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,1,.36,1),opacity .3s;opacity:0}
   .tl-details.open{max-height:320px;opacity:1}
   .tl-more svg{transition:transform .3s}
   .tl-more.open svg{transform:rotate(180deg)}
 
-  .tab-btn{padding:.6rem 1.2rem;border-radius:999px;font-weight:600;font-size:.85rem;color:#475569;border:1.5px solid #e2e8f0;background:#fff;transition:all .25s;white-space:nowrap}
-  .tab-btn:hover{border-color:#a5b4fc;color:#1e3a8a}
-  .tab-btn.active{background:linear-gradient(92deg,#2563eb,#7c3aed);color:#fff;border-color:transparent;box-shadow:0 8px 20px -8px rgba(79,70,229,.5)}
+  .tab-btn{padding:.6rem 1.2rem;border-radius:999px;font-weight:600;font-size:.85rem;color:#505050;border:1.5px solid #e3e3e3;background:#fff;transition:all .25s;white-space:nowrap}
+  .tab-btn:hover{border-color:#8E677A;color:#8E677A}
+  .tab-btn.active{background:linear-gradient(92deg,#8E677A,#8E677A);color:#fff;border-color:transparent;box-shadow:0 8px 20px -8px rgba(142,103,122,.5)}
 
-  .quiz-opt{width:100%;text-align:left;padding:.9rem 1.1rem;border-radius:.9rem;border:1.5px solid #e2e8f0;background:#fff;font-weight:500;transition:all .2s;display:flex;gap:.7rem;align-items:center}
-  .quiz-opt:hover:not(:disabled){border-color:#818cf8;background:#eef2ff;transform:translateX(4px)}
+  .quiz-opt{width:100%;text-align:left;padding:.9rem 1.1rem;border-radius:.9rem;border:1.5px solid #e3e3e3;background:#fff;font-weight:500;transition:all .2s;display:flex;gap:.7rem;align-items:center}
+  .quiz-opt:hover:not(:disabled){border-color:#8E677A;background:#F4F0F4;transform:translateX(4px)}
   .quiz-opt.correct{border-color:#34d399;background:#ecfdf5;color:#065f46}
   .quiz-opt.wrong{border-color:#f87171;background:#fef2f2;color:#991b1b}
   .quiz-opt:disabled{cursor:default}
 
-  .bar-track{height:10px;border-radius:999px;background:#eef2ff;overflow:hidden}
-  .bar-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#38bdf8,#8b5cf6);width:0;transition:width .8s cubic-bezier(.22,1,.36,1)}
+  .bar-track{height:10px;border-radius:999px;background:#F4F0F4;overflow:hidden}
+  .bar-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#8E677A,#8E677A);width:0;transition:width .8s cubic-bezier(.22,1,.36,1)}
 
-  .scale-btn{width:42px;height:42px;border-radius:999px;border:1.5px solid #cbd5e1;font-weight:700;color:#475569;background:#fff;transition:all .2s;font-size:.85rem}
-  .scale-btn:hover{border-color:#818cf8;color:#1e3a8a;transform:scale(1.08)}
-  .scale-btn.selected{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-color:transparent;box-shadow:0 6px 16px -6px rgba(79,70,229,.55);transform:scale(1.08)}
+  .scale-btn{width:42px;height:42px;border-radius:999px;border:1.5px solid #E4DEE7;font-weight:700;color:#505050;background:#fff;transition:all .2s;font-size:.85rem}
+  .scale-btn:hover{border-color:#8E677A;color:#8E677A;transform:scale(1.08)}
+  .scale-btn.selected{background:linear-gradient(135deg,#8E677A,#8E677A);color:#fff;border-color:transparent;box-shadow:0 6px 16px -6px rgba(142,103,122,.55);transform:scale(1.08)}
 
-  .step-dot{width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #c7d2fe;background:#fff;color:#1e3a8a;transition:all .3s;flex-shrink:0}
-  .step-item.active .step-dot{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-color:transparent;box-shadow:0 8px 18px -6px rgba(79,70,229,.5);transform:scale(1.1)}
-  .step-item.done .step-dot{background:#e0e7ff;border-color:#a5b4fc;color:#3730a3}
+  .step-dot{width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #E4DEE7;background:#fff;color:#8E677A;transition:all .3s;flex-shrink:0}
+  .step-item.active .step-dot{background:linear-gradient(135deg,#8E677A,#8E677A);color:#fff;border-color:transparent;box-shadow:0 8px 18px -6px rgba(142,103,122,.5);transform:scale(1.1)}
+  .step-item.done .step-dot{background:#F1E6EB;border-color:#8E677A;color:#6D688C}
 
   .lex-tag{font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .6rem;border-radius:999px}
 
@@ -94,15 +94,33 @@ tailwind.config = {
   .img-frame img{transition:transform .8s cubic-bezier(.22,1,.36,1)}
   .img-frame:hover img{transform:scale(1.04)}
 
-  .chip-float{position:absolute;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border:1px solid #e0e7ff;border-radius:999px;padding:.45rem .9rem;font-size:.72rem;font-weight:600;color:#1e3a8a;box-shadow:0 8px 24px -10px rgba(30,58,138,.25)}
+  .chip-float{position:absolute;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border:1px solid #F1E6EB;border-radius:999px;padding:.45rem .9rem;font-size:.72rem;font-weight:600;color:#8E677A;box-shadow:0 8px 24px -10px rgba(109,104,140,.25)}
 
-  #backTop{position:fixed;right:1.4rem;bottom:1.4rem;width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -8px rgba(79,70,229,.55);opacity:0;pointer-events:none;transform:translateY(16px);transition:all .35s;z-index:60}
+  #backTop{position:fixed;right:1.4rem;bottom:1.4rem;width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#8E677A,#8E677A);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -8px rgba(142,103,122,.55);opacity:0;pointer-events:none;transform:translateY(16px);transition:all .35s;z-index:60}
   #backTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
 
-  .src-link{color:#2563eb;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#bfdbfe}
-  .src-link:hover{color:#1d4ed8;text-decoration-color:#93c5fd}
+  .src-link{color:#8E677A;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#E4DEE7}
+  .src-link:hover{color:#8E677A;text-decoration-color:#E4DEE7}
 
   @media (max-width:768px){ .img-frame{border-radius:1rem} }
+
+  /* Vereinbarte Farbpalette und Typografie */
+  :root{--paper:#FFFCFE;--blue:#98B4FE;--heading:#6D688C;--coral:#FF9596;--accent:#8E677A}
+  body{background:var(--paper);font-family:'Anaheim',sans-serif;font-size:18px}
+  h1,h1 .grad-text{font-family:'Prompt',sans-serif!important;color:var(--heading)!important}
+  h2,h3,h4,h5,h6{font-family:'Trirong',serif!important;color:var(--heading)!important}
+  button,input,select,textarea{font-family:'Anaheim',sans-serif}
+  .grad-text{background:none;color:var(--heading)}
+  .btn-primary,.tab-btn.active,.scale-btn.selected,.step-item.active .step-dot,#backTop{background:var(--accent);color:var(--paper)}
+  .bar-fill,.eyebrow::before,.nav-link.active::after{background:var(--accent)}
+  #start,#meinung,#quiz{background:var(--paper)}
+  #start > .blur-3xl{display:none}
+  [class*="bg-gradient-to"]:not([class*="from-ink"]){background-image:none;background-color:var(--tw-gradient-from)}
+  #scrollProgress{background:var(--coral)}
+  .card{background:var(--paper)}
+  .eyebrow,.nav-link:hover,.nav-link.active,.src-link{color:var(--accent)}
+  ::selection{background:var(--blue);color:#2D2933}
+  :focus-visible{outline:3px solid var(--heading);outline-offset:4px}
 </style>
 </head>
 <body class="bg-white">
@@ -479,6 +497,29 @@ tailwind.config = {
     </div>
     <div class="grid md:grid-cols-3 gap-6 mt-12" id="futureGrid"></div>
 
+    <div id="ki-und-denken" class="mt-14" aria-labelledby="denken-heading">
+      <span class="eyebrow">KI und unser Denken</span>
+      <h3 id="denken-heading" class="text-2xl sm:text-3xl font-semibold mt-3">Wie könnte KI unsere geistigen Fähigkeiten verändern?</h3>
+      <p class="text-slate-600 mt-4 leading-relaxed max-w-3xl">KI könnte beeinflussen, wie wir lernen, uns erinnern, Ideen entwickeln und Probleme lösen. Die folgenden Überlegungen beschreiben mögliche Entwicklungen. Die Vorlage enthält dazu keine wissenschaftlichen Belege; langfristige Wirkungen bleiben offen.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"><article class="card p-6"><h4 class="text-xl font-semibold">Gedächtnis und Wissen</h4><p class="text-slate-600 mt-3 leading-relaxed">Wenn wir Informationen jederzeit mit KI abrufen, könnte sich verändern, was wir uns selbst merken. Für das Verstehen und Prüfen von Antworten bleibt eigenes Wissen wichtig. Offen ist, wie sich eine dauerhafte Nutzung auf unsere Erinnerungsfähigkeit auswirkt.</p></article>
+<article class="card p-6"><h4 class="text-xl font-semibold">Zusammenhänge und Problemlösen</h4><p class="text-slate-600 mt-3 leading-relaxed">KI kann Lösungswege vorschlagen, Gegenargumente formulieren und komplexe Situationen durchspielen. Das könnte helfen, Zusammenhänge zu erkennen und gemeinsam schwierigere Probleme zu bearbeiten. Entscheidend bleibt, die Schritte selbst nachzuvollziehen.</p></article>
+<article class="card p-6"><h4 class="text-xl font-semibold">Denkarbeit auslagern</h4><p class="text-slate-600 mt-3 leading-relaxed">Wer Aufgaben regelmäßig an KI abgibt, übt bestimmte geistige Tätigkeiten möglicherweise seltener. Dieses Auslagern von Denkarbeit heißt kognitives Outsourcing. Deshalb lohnt es sich, bewusst zu entscheiden, welche Aufgaben wir weiterhin selbst bearbeiten.</p></article>
+<article class="card p-6"><h4 class="text-xl font-semibold">Kreativität und eigene Ideen</h4><p class="text-slate-600 mt-3 leading-relaxed">KI kann zusätzliche Ideen und Varianten anbieten. Zugleich besteht die Möglichkeit, dass Vorschläge einander ähneln und die eigene Suche früh beeinflussen. Eine offene Frage ist, wie wir dabei eigene Ausdrucksweisen und Originalität entwickeln.</p></article>
+<article class="card p-6"><h4 class="text-xl font-semibold">Konzentration und selbstständiges Denken</h4><p class="text-slate-600 mt-3 leading-relaxed">Schnell verfügbare Antworten könnten dazu verleiten, eine Aufgabe früh abzugeben. Wie sich das auf Konzentration und Ausdauer auswirkt, hängt auch von der Art der Nutzung ab. Eigene Denkphasen bieten Gelegenheit, diese Fähigkeiten weiter zu üben.</p></article>
+<article class="card p-6"><h4 class="text-xl font-semibold">Annahmen und Denkfehler prüfen</h4><p class="text-slate-600 mt-3 leading-relaxed">KI kann auf mögliche Gegenargumente und übersehene Annahmen aufmerksam machen. Auch diese Hinweise können fehlerhaft sein. Gute Fragen, Quellenprüfung und ein eigenes begründetes Urteil bleiben deshalb wichtige Fähigkeiten.</p></article></div>
+      <div class="rounded-2xl border border-indigo-200 bg-indigo-50 p-6 mt-6">
+        <h4 class="text-xl font-semibold">Zum Ausprobieren: eigene Denkarbeit sichtbar machen</h4>
+        <ol class="list-decimal pl-6 mt-3 space-y-2 text-slate-700">
+          <li>Notiere zuerst eine eigene Idee oder einen Lösungsweg.</li>
+          <li>Bitte KI um eine Ergänzung, eine Rückfrage oder ein Gegenargument.</li>
+          <li>Vergleiche die Vorschläge: Was ist nachvollziehbar? Welche Information braucht einen Beleg? Begründe anschließend deine eigene Entscheidung.</li>
+        </ol>
+        <p class="text-sm text-slate-600 mt-4">Leitfragen: Welche Fähigkeit habe ich selbst geübt? Welche Denkarbeit habe ich abgegeben?</p>
+      </div>
+      <p class="text-sm text-slate-500 mt-4">Grundlage: bereitgestellte Projektnotizen „Kume.pdf“, Seite 1. Sprachlich überarbeitet und thematisch geordnet. Die Übung ergänzt die Notizen als Vorschlag.</p>
+    </div>
+
+
     <div class="reveal mt-14 rounded-3xl bg-gradient-to-r from-navy via-indigo-600 to-violet-600 text-white p-8 sm:p-12 relative overflow-hidden">
       <div class="absolute -right-10 -top-10 w-64 h-64 rounded-full bg-white/10 blur-2xl"></div>
       <div class="absolute -left-10 -bottom-16 w-64 h-64 rounded-full bg-cyan-300/20 blur-2xl"></div>
@@ -650,7 +691,7 @@ tailwind.config = {
 
 /* ---------- Bild-Fallback ---------- */
 const FALLBACK_IMG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
-  `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#ede9fe"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><circle cx="400" cy="200" r="40" fill="none" stroke="#818cf8" stroke-width="3"/><circle cx="400" cy="200" r="14" fill="#818cf8"/><text x="400" y="290" font-family="sans-serif" font-size="20" fill="#1e3a8a" text-anchor="middle">Bild konnte nicht geladen werden</text></svg>`);
+  `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F0F4"/><stop offset="1" stop-color="#F1E6EB"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><circle cx="400" cy="200" r="40" fill="none" stroke="#8E677A" stroke-width="3"/><circle cx="400" cy="200" r="14" fill="#8E677A"/><text x="400" y="290" font-family="sans-serif" font-size="20" fill="#8E677A" text-anchor="middle">Bild konnte nicht geladen werden</text></svg>`);
 document.querySelectorAll('img').forEach(img => {
   img.addEventListener('error', () => { if (img.src !== FALLBACK_IMG) img.src = FALLBACK_IMG; });
 });
@@ -713,7 +754,7 @@ backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smo
     for (let i=0;i<nodes.length;i++) for (let j=i+1;j<nodes.length;j++){
       const a=nodes[i], b=nodes[j], d=Math.hypot(a.x-b.x, a.y-b.y);
       if (d < 130){
-        ctx.strokeStyle = 'rgba(129,140,248,' + ((1-d/130)*.32) + ')';
+        ctx.strokeStyle = 'rgba(142,103,122,' + ((1-d/130)*.32) + ')';
         ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
       }
     }
@@ -837,7 +878,7 @@ document.getElementById('conceptGrid').innerHTML = CONCEPTS.map((c,i) => `
       const line = document.createElementNS(ns,'line');
       line.setAttribute('x1',xs[l]); line.setAttribute('y1',y1);
       line.setAttribute('x2',xs[l+1]); line.setAttribute('y2',y2);
-      line.setAttribute('stroke','#c7d2fe'); line.setAttribute('stroke-width','1.4');
+      line.setAttribute('stroke','#E4DEE7'); line.setAttribute('stroke-width','1.4');
       svg.appendChild(line);
       edges.push({ a:{x:xs[l],y:y1}, b:{x:xs[l+1],y:y2}, from:l, fromIdx:i, to:l+1, toIdx:j });
     }));
@@ -845,28 +886,28 @@ document.getElementById('conceptGrid').innerHTML = CONCEPTS.map((c,i) => `
   ys.forEach((arr,l) => arr.forEach((y,i) => {
     const c = document.createElementNS(ns,'circle');
     c.setAttribute('cx',xs[l]); c.setAttribute('cy',y); c.setAttribute('r',12);
-    c.setAttribute('fill','#ffffff'); c.setAttribute('stroke','#818cf8'); c.setAttribute('stroke-width','2');
+    c.setAttribute('fill','#ffffff'); c.setAttribute('stroke','#8E677A'); c.setAttribute('stroke-width','2');
     svg.appendChild(c);
     nodes.push({ el:c, x:xs[l], y, layer:l, idx:i });
     const t = document.createElementNS(ns,'text');
     t.setAttribute('x',xs[l]); t.setAttribute('y',y+3.5); t.setAttribute('text-anchor','middle');
-    t.setAttribute('font-size','9'); t.setAttribute('font-weight','700'); t.setAttribute('fill','#6366f1');
+    t.setAttribute('font-size','9'); t.setAttribute('font-weight','700'); t.setAttribute('fill','#8E677A');
     t.textContent = (l===0?'E':l===1?'V':'A') + (i+1);
     svg.appendChild(t);
   }));
   labels.forEach((lb,l) => {
     const t = document.createElementNS(ns,'text');
     t.setAttribute('x',xs[l]); t.setAttribute('y',272); t.setAttribute('text-anchor','middle');
-    t.setAttribute('font-size','11'); t.setAttribute('font-weight','600'); t.setAttribute('fill','#64748b');
+    t.setAttribute('font-size','11'); t.setAttribute('font-weight','600'); t.setAttribute('fill','#666666');
     t.textContent = lb; svg.appendChild(t);
   });
 
   const pulses = [];
   let interval = 700, lastSpawn = 0;
   function flash(node){
-    node.el.setAttribute('stroke','#06b6d4'); node.el.setAttribute('stroke-width','3.5');
-    node.el.setAttribute('fill','#ecfeff');
-    setTimeout(() => { node.el.setAttribute('stroke','#818cf8'); node.el.setAttribute('stroke-width','2'); node.el.setAttribute('fill','#ffffff'); }, 320);
+    node.el.setAttribute('stroke','#8E677A'); node.el.setAttribute('stroke-width','3.5');
+    node.el.setAttribute('fill','#FAF4F7');
+    setTimeout(() => { node.el.setAttribute('stroke','#8E677A'); node.el.setAttribute('stroke-width','2'); node.el.setAttribute('fill','#ffffff'); }, 320);
   }
   function spawn(fromNode){
     const pool = edges.filter(e => fromNode ? (e.from===fromNode.layer && e.fromIdx===fromNode.idx) : e.from===0);
@@ -883,7 +924,7 @@ document.getElementById('conceptGrid').innerHTML = CONCEPTS.map((c,i) => `
       let dot = p.dot;
       if (!dot){
         dot = document.createElementNS(ns,'circle');
-        dot.setAttribute('r','5'); dot.setAttribute('fill','#22d3ee');
+        dot.setAttribute('r','5'); dot.setAttribute('fill','#8E677A');
         dot.setAttribute('opacity','.95'); svg.appendChild(dot); p.dot = dot;
       }
       dot.setAttribute('cx',x); dot.setAttribute('cy',y);
@@ -1267,9 +1308,9 @@ function showResult(){
     <div class="text-center py-4">
       <div class="relative w-40 h-40 mx-auto">
         <svg viewBox="0 0 120 120" class="w-full h-full -rotate-90">
-          <circle cx="60" cy="60" r="54" fill="none" stroke="#eef2ff" stroke-width="10"/>
+          <circle cx="60" cy="60" r="54" fill="none" stroke="#F4F0F4" stroke-width="10"/>
           <circle id="ringFg" cx="60" cy="60" r="54" fill="none" stroke="url(#qgrad)" stroke-width="10" stroke-linecap="round" stroke-dasharray="339.29" stroke-dashoffset="339.29"/>
-          <defs><linearGradient id="qgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+          <defs><linearGradient id="qgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8E677A"/><stop offset="1" stop-color="#8E677A"/></linearGradient></defs>
         </svg>
         <div class="absolute inset-0 flex flex-col items-center justify-center">
           <span class="font-display font-extrabold text-3xl grad-text">${pct}%</span>
@@ -1294,6 +1335,7 @@ renderQuizStart();
    LEXIKON
 ============================================================ */
 const LEXICON = [
+  { term:'Kognitives Outsourcing', tag:'Nutzung', def:'Das Auslagern geistiger Aufgaben an Hilfsmittel, zum Beispiel an KI. Dabei stellt sich die Frage, welche Fähigkeiten wir selbst weiter üben und wie wir die Ergebnisse prüfen.' },
   { term:'Algorithmus', tag:'Grundlagen', def:'Eine Schritt-für-Schritt-Anleitung, die ein Computer befolgt, um ein Problem zu lösen – wie ein Kochrezept für Maschinen.' },
   { term:'Künstliche Intelligenz (KI)', tag:'Grundlagen', def:'Sammelbegriff für Computerprogramme, die Aufgaben lösen, für die bisher menschliche Intelligenz nötig schien – etwa Sprache verstehen oder Bilder erkennen.' },
   { term:'Machine Learning', tag:'Verfahren', def:'Maschinen lernen aus Beispielen (Daten), statt für jeden Fall einzeln programmiert zu werden.' },
